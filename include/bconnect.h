@@ -1,8 +1,9 @@
 #ifndef BCONNECT_H_
 #define BCONNECT_H_
 
-#include <memory>
 #include <message.h>
+
+#include <memory>
 
 #define BCONNECT_API __attribute__((visibility("default")))
 

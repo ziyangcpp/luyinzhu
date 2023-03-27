@@ -3,7 +3,11 @@
 #include <iostream>
 #include <string>
 
-int main() {
-  std::cout << "bconn" << std::endl;
-  return 0;
+namespace bcon {
+
+enum IBconnect::State Bconnect::State() const {
+  std::cout << "State" << std::endl;
+  return IBconnect::State::bInit;
 }
+
+}  // namespace bcon

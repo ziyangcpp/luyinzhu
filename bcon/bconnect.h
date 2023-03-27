@@ -3,4 +3,11 @@
 
 #include <bconnect.h>
 
+namespace bcon {
+class Bconnect : public IBconnect {
+ public:
+  enum IBconnect::State State() const override;
+};
+}  // namespace bcon
+
 #endif
