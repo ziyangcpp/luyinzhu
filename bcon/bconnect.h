@@ -7,6 +7,12 @@ namespace bcon {
 class Bconnect : public IBconnect {
  public:
   enum IBconnect::State State() const override;
+
+  std::string QueryPersistentInfo(const std::string& key) const;
+
+  void StorePersistentInfo(const std::string& key, const std::string& value);
+
+  void RemovePersistentInfo(const std::string& key);
 };
 }  // namespace bcon
 
